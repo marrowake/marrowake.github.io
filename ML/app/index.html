@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ML Design | Digital-designer & illustrator</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+  <!--[if lt IE 9]>
+	            <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__info animated fadeIn">
+      <!--  -->
+      <div class="header__logo">
+        <a href="#">
+          <img src="images/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="menu-btn">
+        <!-- <div class="menu-btn__inner"> -->
+        <input type="checkbox" id="check__menu">
+        <label for="check__menu"></label>
+        <div class="menu-btn__line line-1"></div>
+        <div class="menu-btn__line line-2"></div>
+        <div class="menu-btn__line line-3"></div>
+        <div class="menu-btn__line line-4"></div>
+        <!-- </div> -->
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li><a class="scrollto" href="#myWorks" onclick="slowScroll('#myWorks')"><span>Работы</span></a></li>
+          <li><a class="scrollto" href="#about" onclick="slowScroll('#about')"><span>Обо мне</span></a></li>
+          <li><a class="scrollto" href="#contacts" onclick="slowScroll('#contacts')"><span>Контакты</span></a></li>
+        </ul>
+      </nav>
+      <div class="header__contact">
+        <a class="header__phone" href="tel:+79217738477">+7 (921) 773-84-77</a>
+        <a class="header__phone-img" href="tel:+79217738477">
+          <img src="images/phone-call-1.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="header__title-info animated fadeIn delay-1s">
+      <!--  -->
+      <div class="header__title-text">
+        Mashilova Lyubov
+      </div>
+      <div class="header__subtitle-text">
+        Digital-designer & illustrator
+      </div>
+    </div>
+    <div class="mobile__contacts-social">
+      <ul>
+        <li><a href="https://www.behance.net/" target="_blank" title="Я на Behance"><img
+              src="images/behance-white.svg"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" title="Я в Instagramm"><img
+              src="images/instagram.svg"></a></li>
+        <li><a href="#" target="_blank" title="Я в Skype"><img src="images/skype.svg"></a></li>
+      </ul>
+    </div>
+    <div class="scroll__down animated fadeIn delay-2s">
+      <!--  -->
+      <a href="#myWorks" onclick="slowScroll('#myWorks')" class="animated fadeInDown infinite slow">
+        <!--  -->
+        <img src="images/scroll-down.svg" width="50" height="50">
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section id="myWorks" class="works">
+      <div class="works__title wow fadeIn" data-wow-offset="500">
+        <!--  -->
+        <div>
+          <h3>Работы</h3>
+          <span>works</span>
+        </div>
+      </div>
+      <nav class="works__menu wow fadeIn" data-wow-offset="500" data-wow-delay="">
+        <!--  -->
+        <ul class="works__menu-list">
+          <li class="button all" data-filter="all" tabindex="-1"><a href="#myWorks">Все</a></li>
+          <li class="button mobile" data-filter="mobile" tabindex="-2"><a href="#myWorks">Мобильные интерфейсы</a></li>
+          <li class="button site" data-filter="site" tabindex="-3"><a href="#myWorks">Сайты</a></li>
+          <li class="button illustrate" data-filter="illustrate" tabindex="-4"><a href="#myWorks">Иллюстрации</a></li>
+        </ul>
+      </nav>
+      <nav class="works__menu-mobile wow fadeIn" data-wow-offset="500" data-wow-delay="">
+        <!--  -->
+        <ul class="works__menu-list list-mobile">
+          <li class="button all" data-filter="all" tabindex="-1"><a href="#myWorks">Все</a></li>
+          <li class="button mobile" data-filter="mobile" tabindex="-2"><a href="#myWorks">Мобильные интерфейсы</a></li>
+          <li class="button site" data-filter="site" tabindex="-3"><a href="#myWorks">Сайты</a></li>
+          <li class="button illustrate" data-filter="illustrate" tabindex="-4"><a href="#myWorks">Иллюстрации</a></li>
+        </ul>
+      </nav>
+      <div class="works__items" id="items">
+        <div class="item elem illustrate wow fadeInUp" data-wow-offset="600" data-wow-delay="1s">
+          <!--  -->
+          <a data-fancybox="" data-width="" data-height="" href="images/work-1-big.jpg"><img title="Волк и луна"
+              src="images/work-1.jpg" alt="Пример работы: Волк и луна"></a>
+        </div>
+        <div class="item elem site wow fadeInUp" data-wow-offset="600" data-wow-delay="1.2s">
+          <!--  -->
+          <a data-fancybox="" data-width="500" data-height="500" href="images/work-2.jpg"><img
+              title="Интернет-магазин Undress Code" src="images/work-2.jpg"
+              alt="Пример работы: Интернет-магазин Undress Code"></a>
+        </div>
+        <div class="item elem illustrate wow fadeInUp" data-wow-offset="600" data-wow-delay="1.4s">
+          <!--  -->
+          <a data-fancybox="" data-width="" data-height="" href="images/work-3-big.jpg"><img title="Девочка на качелях"
+              src="images/work-3.jpg" alt="Пример работы: Девочка на качелях"></a>
+        </div>
+        <div class="item elem site wow fadeInUp" data-wow-offset="" data-wow-delay="1.6s">
+          <!--  -->
+          <a data-fancybox="" data-width="500" data-height="500" href="images/work-4.jpg"><img title="Прототип ГЦСИ"
+              src="images/work-4.jpg" alt="Пример работы: Прототип ГЦСИ"></a>
+        </div>
+        <div class="item elem site wow fadeInUp" data-wow-offset="" data-wow-delay="1.8s">
+          <!--  -->
+          <a data-fancybox="" data-width="500" data-height="500" href="images/work-5.jpg"><img
+              title="Фан-сайт по игре Dota 2" src="images/work-5.jpg" alt="Пример работы: Фан-сайт по игре Dota 2"></a>
+        </div>
+        <div class="item elem site wow fadeInUp" data-wow-offset="" data-wow-delay="2s">
+          <!--  -->
+          <a data-fancybox="" data-width="500" data-height="500" href="images/work-6.jpg"><img
+              title="Прототип ГЦСИ ver.2" src="images/work-6.jpg" alt="Пример работы: Прототип ГЦСИ ver.2"></a>
+        </div>
+      </div>
+      <div class="works__items-mobile" id="items">
+        <div class="item elem illustrate" data-wow-offset="600" data-wow-delay="1s">
+          <!-- wow fadeInUp -->
+          <a data-fancybox="" data-width="" data-height="" href="images/work-1-big.jpg"><img title="Волк и луна"
+              src="images/work-1.jpg" alt="Пример работы: Волк и луна"></a>
+        </div>
+        <div class="item elem site" data-wow-offset="600" data-wow-delay="1.2s">
+          <!-- wow fadeInUp -->
+          <a data-fancybox="" data-width="500" data-height="500" href="images/work-2.jpg"><img
+              title="Интернет-магазин Undress Code" src="images/work-2.jpg"
+              alt="Пример работы: Интернет-магазин Undress Code"></a>
+        </div>
+        <div class="item elem illustrate" data-wow-offset="600" data-wow-delay="1.4s">
+          <!-- wow fadeInUp -->
+          <a data-fancybox="" data-width="" data-height="" href="images/work-3-big.jpg"><img title="Девочка на качелях"
+              src="images/work-3.jpg" alt="Пример работы: Девочка на качелях"></a>
+        </div>
+        <div class="item elem site" data-wow-offset="" data-wow-delay="1.6s">
+          <!-- wow fadeInUp -->
+          <a data-fancybox="" data-width="500" data-height="500" href="images/work-4.jpg"><img title="Прототип ГЦСИ"
+              src="images/work-4.jpg" alt="Пример работы: Прототип ГЦСИ"></a>
+        </div>
+        <div class="item elem site" data-wow-offset="" data-wow-delay="1.8s">
+          <!-- wow fadeInUp -->
+          <a data-fancybox="" data-width="500" data-height="500" href="images/work-5.jpg"><img
+              title="Фан-сайт по игре Dota 2" src="images/work-5.jpg" alt="Пример работы: Фан-сайт по игре Dota 2"></a>
+        </div>
+        <div class="item elem site" data-wow-offset="" data-wow-delay="2s">
+          <!-- wow fadeInUp -->
+          <a data-fancybox="" data-width="500" data-height="500" href="images/work-6.jpg"><img
+              title="Прототип ГЦСИ ver.2" src="images/work-6.jpg" alt="Пример работы: Прототип ГЦСИ ver.2"></a>
+        </div>
+      </div>
+      <div class="dots__slider-mobile">
+        <div class="dots__slider-item"></div>
+        <div class="dots__slider-item"></div>
+        <div class="dots__slider-item"></div>
+        <div class="dots__slider-item"></div>
+        <div class="dots__slider-item"></div>
+        <div class="dots__slider-item"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__title wow fadeIn" data-wow-offset="500">
+        <!--  -->
+        <div>
+          <h3>Обо мне</h3>
+          <span>about</span>
+        </div>
+      </div>
+      <div class="about__info wow fadeIn" data-wow-offset="500" data-wow-delay="0.6s">
+        <!--  -->
+        <div class="about__info-img">
+          <img src="images/author.jpg" alt="">
+        </div>
+        <div class="about__info-content">
+          <div class="about__info-content__text">
+            <p>Меня зовут Любовь Машилова.</p>
+            <p>
+              Занимаюсь дизайном с 2018 года. Постоянно слежу
+              за трендами в отраслях сайтостроения и иллюстраций.
+              Также занимаюсь ретушью.
+            </p>
+            <p>
+              Занимаюсь созданием одностраничных сайтов,
+              интернет - магазинов, демо - страниц, иллюстраций,
+              а также созданием баннеров.
+            </p>
+          </div>
+          <div class="about__info-content__button">
+            <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1_VN6t2gTif91YHtvuJqSc_JETNR99203"
+              download="" title="Мое резюме">Скачать резюме</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="contacts__title wow fadeIn" data-wow-offset="500">
+        <!--  -->
+        <div>
+          <h3>Обратная связь</h3>
+          <span>contacts</span>
+        </div>
+      </div>
+      <form action="" method="POST" class="wow fadeIn" data-wow-offset="500" data-wow-delay="0.6s">
+        <!--  -->
+        <fieldset>
+          <div class="wrapper">
+            <div class="wrapper__element">
+              <input type="text" required name="Name" placeholder="Имя">
+            </div>
+            <div class="wrapper__element">
+              <input type="tel" required name="Phone" placeholder="Телефон">
+            </div>
+            <div class="wrapper__element">
+              <input type="email" required name="Email" placeholder="E-mail">
+            </div>
+            <div class="wrapper__text-area">
+              <textarea cols="" rows="" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="wrapper__btn">
+              <input type="submit" value="Отправить">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__info">
+        <div class="footer__info-block">
+          <div class="footer__info-block__geo">
+            <img src="images/location-pin.svg">
+            <p>Санкт-Петербург</p>
+          </div>
+          <div class="footer__info-block__copy">
+            <img src="images/copyright.svg">
+            <p>2018.Mashilova</p>
+          </div>
+        </div>
+        <div class="footer__info-logo">
+          <a href="#">
+            <img src="images/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="footer__info-contacts">
+          <div class="footer__info-contacts__phone">
+            <a class="footer__phone" href="tel:+79217738477">+7 (921) 773-84-77</a>
+          </div>
+          <div class="footer__info-contacts__social">
+            <ul>
+              <li><a href="https://www.behance.net/" target="_blank" title="Я на Behance"><img
+                    src="images/behance-white.svg"></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" title="Я в Instagramm"><img
+                    src="images/instagram.svg"></a></li>
+              <li><a href="#" target="_blank" title="Я в Skype"><img src="images/skype.svg"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="icons__copy">
+        Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a
+          href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toTop"><img class="up__arrow" src="images/up-arrow.svg" width="64px" height="64px"></div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

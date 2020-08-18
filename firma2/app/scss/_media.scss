@@ -1,0 +1,333 @@
+@media screen and (max-width: 1024px) {
+  .header {
+    &__main {
+    }
+    &__btn {
+    }
+  }
+  .search__form {
+    &-title {
+    }
+    input[type="search"] {
+    }
+    input[type="search"]::placeholder {
+    }
+    input[type="submit"] {
+    }
+    p {
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .payments,
+  .debts,
+  .taxes,
+  .rosreestr {
+    padding: 80px 10px 40px;
+  }
+  .search__form {
+    padding: 0 10px;
+    input[type="search"] {
+      position: relative;
+      width: 100%;
+    }
+    input[type="submit"] {
+      position: absolute;
+      right: 10px;
+      top: 61px;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .footer {
+    padding: 30px 10px;
+    .copy__list,
+    .list__items {
+      font-size: 12px;
+    }
+    .secure__logo {
+      padding-top: 55px;
+    }
+    .list__items {
+      li {
+        padding-bottom: 15px;
+      }
+    }
+    .footer__phone {
+      font-size: 20px;
+    }
+    .contacts__list {
+      li + li {
+        padding-bottom: 30px;
+        font-size: 12px;
+      }
+    }
+    .footer__add-info__text {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .header {
+    &__main {
+      display: none;
+    }
+    &__mobile {
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // header fixed
+      position: sticky;
+      top: 0;
+      background-color: rgba(#fff, 0.9);
+      z-index: 100;
+      .header__btn {
+        width: inherit;
+      }
+    }
+  }
+  #check__menu {
+    display: none;
+  }
+  label {
+    width: 100%;
+    height: 100%;
+    z-index: 105;
+  }
+  .help__menu-btn {
+    width: 20px;
+    height: 20px;
+    z-index: 102;
+    &__line {
+      position: absolute;
+      top: 0;
+      width: 19px;
+      height: 3px;
+      background-color: #0777b9;
+      transition: 0.5s all;
+      z-index: 102;
+    }
+    .line-2,
+    .line-3 {
+      top: 6px;
+    }
+    .line-4 {
+      top: 12px;
+    }
+  }
+  #check__menu:checked ~ .line-1 {
+    display: none;
+  }
+  #check__menu:checked ~ .line-2 {
+    transform: rotate(45deg);
+  }
+  #check__menu:checked ~ .line-3 {
+    transform: rotate(-45deg);
+  }
+  #check__menu:checked ~ .line-4 {
+    display: none;
+  }
+  .help__menu {
+    &-dropdown {
+      right: -20px;
+      width: 100vw;
+      height: 220px;
+    }
+  }
+  #login {
+    text-align: center;
+    width: 98%;
+  }
+  .main__screen {
+    height: 210px;
+  }
+  .search__form {
+    top: 50px;
+    &-title {
+      font-size: 21px;
+      text-align: center;
+    }
+    input[type="search"] {
+      padding: 12px;
+    }
+    input[type="search"]::placeholder {
+      font-size: 15px;
+    }
+    input[type="submit"] {
+      display: none;
+    }
+    input[type="image"] {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 56px;
+    }
+    p {
+      display: none;
+    }
+  }
+  .services {
+    &__title {
+      display: none;
+      &-mobile {
+        display: block;
+        text-align: center;
+        font-size: 21px;
+      }
+    }
+    &__list {
+      display: none;
+    }
+  }
+  .container__inner {
+    display: none;
+  }
+  .container__mobile {
+    display: block;
+  }
+
+  .accordion-item--active .accordion-item__content {
+    display: block;
+  }
+  .accordion-item__content {
+    display: none;
+  }
+  .payments-mobile__title,
+  .payments-dop__title,
+  .debts-mobile__title,
+  .taxes-mobile__title,
+  .rosreestr-mobile__title {
+    position: relative;
+  }
+  .payments-mobile__title::before {
+    content: url("../img/section-img_mob-1.png");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .payments-mobile__title::after {
+    content: url("../img/title-arrow-down.png");
+    position: absolute;
+    top: 7px;
+    right: 0;
+  }
+  .payments-dop__title::before {
+    content: url("../img/section-img_mob-2.png");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .payments-dop__title::after {
+    content: url("../img/title-arrow-down.png");
+    position: absolute;
+    top: 7px;
+    right: 0;
+  }
+  .debts-mobile__title::before {
+    content: url("../img/section-img_mob-3.png");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .debts-mobile__title::after {
+    content: url("../img/title-arrow-down.png");
+    position: absolute;
+    top: 7px;
+    right: 0;
+  }
+  .taxes-mobile__title::before {
+    content: url("../img/section-img_mob-4.png");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .taxes-mobile__title::after {
+    content: url("../img/title-arrow-down.png");
+    position: absolute;
+    top: 7px;
+    right: 0;
+  }
+  .rosreestr-mobile__title::before {
+    content: url("../img/section-img_mob-5.png");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rosreestr-mobile__title::after {
+    content: url("../img/title-arrow-down.png");
+    position: absolute;
+    top: 7px;
+    right: 0;
+  }
+  .accordion-item--active .payments-mobile__title::after,
+  .accordion-item--active .payments-dop__title::after,
+  .accordion-item--active .debts-mobile__title::after,
+  .accordion-item--active .taxes-mobile__title::after,
+  .accordion-item--active .rosreestr-mobile__title::after {
+    transform: rotate(180deg);
+  }
+
+  .partners__mobile {
+    display: block;
+    padding: 40px 0 20px 0;
+    &-title {
+      font-size: 21px;
+      text-align: center;
+    }
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      max-width: 600px;
+      padding: 20px 10px;
+      margin: 0 auto;
+    }
+    &-item {
+      width: 50%;
+      &__title {
+        max-width: 145px;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 auto;
+      }
+    }
+    img {
+      opacity: 0.25;
+    }
+  }
+  .footer {
+    display: none;
+    &__mobile {
+      display: block;
+      background-color: #e6ecf1;
+      padding: 20px 40px 15px;
+    }
+    &__mobile-elements {
+      max-width: 295px;
+      font-size: 13px;
+      text-align: center;
+      margin: 0 auto;
+      &__text {
+        padding-bottom: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 599px) {
+}
+
+@media screen and (max-height: 420px) {
+}
+
+@media screen and (max-height: 375px) {
+}
